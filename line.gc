@@ -1,0 +1,37 @@
+; LightBurn 1.7.04
+; GRBL-M3 (1.1e or earlier) device profile, absolute coords
+; Bounds: X6.49 Y5.97 to X88.52 Y6.03
+G00 G17 G40 G21 G54
+G90
+; Cut @ 10 mm/min, 100% power
+M8
+M5
+G0 X6.494Y6.033
+; Layer C02 Pass 1 of 10
+M3
+G1 X88.522Y5.967S255F10
+; Layer C02 Pass 2 of 10
+G1 X6.494Y6.033
+; Layer C02 Pass 3 of 10
+G1 X88.522Y5.967
+; Layer C02 Pass 4 of 10
+G1 X6.494Y6.033
+; Layer C02 Pass 5 of 10
+G1 X88.522Y5.967
+; Layer C02 Pass 6 of 10
+G1 X6.494Y6.033
+; Layer C02 Pass 7 of 10
+G1 X88.522Y5.967
+; Layer C02 Pass 8 of 10
+G1 X6.494Y6.033
+; Layer C02 Pass 9 of 10
+G1 X88.522Y5.967
+; Layer C02 Pass 10 of 10
+G1 X6.494Y6.033
+M5
+M9
+G1 S0
+G90
+; return to user-defined finish pos
+G0 X0Y0
+M2
